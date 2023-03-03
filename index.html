@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RascaPumba</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <a href="#" class="logo">
+        <!--<img src="./img/logo.svg" alt="logo-raspaPumba">--><span
+          >RascaPumba</span
+        >
+      </a>
+
+      <ul class="navbar">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Acerca de nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contactanos.html">Contactanos</a></li>
+      </ul>
+
+      <div class="main">
+        <!-- <a href="#" class="user"
+            ><i class="ri-user-fill"></i>Iniciar sesion</a
+          >
+          <a href="#">Registrarse</a> -->
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+      <!-- Fin Navbar -->
+    </header>
+    <br />
+    <br />
+    <br />
+    <!-- Carusel -->
+    <div class="cuerpo-slider">
+      <div class="slider">
+        <div class="slides">
+          <br />
+          <br />
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+
+          <div class="slide first">
+            <img src="./img/banners/uno.jpg" alt="imagen 1" />
+          </div>
+          <div class="slide">
+            <img src="./img/banners/dos.jpg" alt="imagen 2" />
+          </div>
+          <div class="slide">
+            <img src="./img/banners/tres.jpg" alt="imagen 3" />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+      </div>
+    </div>
+    <!--Fin Carusel -->
+
+    <!-- JS Links -->
+    <script type="text/javascript" src="./JS/script.js"></script>
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 3){
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+  </body>
+</html>

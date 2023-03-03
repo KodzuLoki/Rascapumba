@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RascaPumba</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./CSS/style-contact.css" />
+    <!-- GOOGLE FONTs -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <a href="#" class="logo">
+        <!--<img src="./img/logo.svg" alt="logo-raspaPumba">--><span
+          >RascaPumba</span
+        >
+      </a>
+
+      <ul class="navbar">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Acerca de nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contactanos.html">Contactanos</a></li>
+      </ul>
+
+      <div class="main">
+        <!-- <a href="#" class="user"
+            ><i class="ri-user-fill"></i>Iniciar sesion</a
+          >
+          <a href="#">Registrarse</a> -->
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+      <!-- Fin Navbar -->
+    </header>
+    <br />
+    <br />
+    <br />
+    <!-- Formulario -->
+    <div class="content">
+      <h1 class="logo">contactanos</h1>
+
+      <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+          <h3>Formulario de contacto</h3>
+          <form action="">
+            <p>
+              <label>Nombre</label>
+              <input type="text" name="fullname" />
+            </p>
+            <p>
+              <label>Correo</label>
+              <input type="email" name="email" />
+            </p>
+            <p>
+              <label>Numero de celular</label>
+              <input type="tel" name="phone" />
+            </p>
+            <p>
+              <label>Tipo consulta</label>
+              <select id="tipoConsulta" name="tipoConsulta">
+                <option value="Felicitaciones">Felicitaciones</option>
+                <option value="Consulta por stock">Consulta por stock</option>
+                <option value="Reclamo">Reclamo</option>
+                <option value="Sugerencia">Sugerencia</option>
+              </select>
+            </p>
+            <p class="block">
+              <label>Mensaje</label>
+              <textarea name="message" rows="3"></textarea>
+            </p>
+            <p class="block">
+              <button>Enviar</button>
+            </p>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h4>Mas informacion</h4>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>Aun no contamos con sucursal
+            </li>
+            <li><i class="fas fa-phone"></i>(+56) 9 4229 4440</li>
+            <li>
+              <i class="fas fa-envelope-open-text"></i> RascaPumba@gmail.com
+            </li>
+          </ul>
+          <p>
+            Somos una mini pyme familiar, comenzamos el año 2022 y este es
+            nuestro paso a nuestra primera pagina web.
+          </p>
+          <p>Compartenos con tus conocidos!!!</p>
+        </div>
+      </div>
+    </div>
+    <!--Fin Formulario -->
+
+    <!-- JS Links -->
+    <script type="text/javascript" src="./JS/script.js"></script>
+  </body>
+</html>
